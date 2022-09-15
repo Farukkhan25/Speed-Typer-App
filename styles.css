@@ -190,68 +190,64 @@ button {
 
 /* Blog */
 
- .row {
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
-      }
-      .blog-page-component .card .blog-thumbnail {
-        overflow: hidden;
-      }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.blog-page-component .card .blog-thumbnail {
+  overflow: hidden;
+}
 
-      .blog-page-component .card .blog-thumbnail {
-        position: relative;
-      }
-      .blog-page-component .card .blog-thumbnail:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        transition: 0.3s ease-in-out;
-        opacity: 0;
-        background: linear-gradient(
-          100deg,
-          rgba(0, 0, 255, 0.3),
-          rgba(0, 0, 255, 0)
-        );
-        z-index: 2;
-      }
-      .blog-page-component .card {
-        background: #fff;
-        box-shadow: 0 0 10px rgb(18 17 39 / 10%);
-        border-radius: 20px;
-        overflow: hidden;
-        border: none;
-        width: 100%;
-        max-width: 400px;
-        height: 100%;
-        min-height: 580px;
-        position: relative;
-        transition: 0.3s ease;
-        margin: 0 auto;
-      }
-      .blog-page-component .card .blog-thumbnail img {
-        width: 100%;
-        object-fit: fill;
-        height: 300px;
-        min-height: 300px;
-        transition: 0.3s ease;
-      }
-      .modal-image img {
-        width: 300px;
-      }
+.blog-page-component .card .blog-thumbnail {
+  position: relative;
+}
+.blog-page-component .card .blog-thumbnail:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  background: linear-gradient(100deg, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0));
+  z-index: 2;
+}
+.blog-page-component .card {
+  background: #fff;
+  box-shadow: 0 0 10px rgb(18 17 39 / 10%);
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  min-height: 580px;
+  position: relative;
+  transition: 0.3s ease;
+  margin: 0 auto;
+}
+.blog-page-component .card .blog-thumbnail img {
+  width: 100%;
+  object-fit: fill;
+  height: 300px;
+  min-height: 300px;
+  transition: 0.3s ease;
+}
+.modal-image img {
+  width: 300px;
+}
 
-      img,
-      svg {
-        vertical-align: middle;
-      }
+img,
+svg {
+  vertical-align: middle;
+}
 
-      #blog-modal {
-        display: none;
-      }
+#blog-modal {
+  display: none;
+}
 
 @media only screen and (max-width: 700px) {
   .box-container {
@@ -263,4 +259,3 @@ button {
     flex-direction: column;
   }
 }
-

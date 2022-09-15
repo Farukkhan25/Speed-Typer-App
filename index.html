@@ -20,45 +20,53 @@
     />
   </head>
   <body>
-    <nav class="navbar ">
+    <nav class="navbar">
       <div class="container d-flex justify-content-between">
-        <button type="button" class="btn btn-outline-warning fw-bold mt-2" style="width: 125px;">
-          <a class="text-light text-decoration-none fs-4" href="./index.html">Typer</a>
+        <button
+          type="button"
+          class="btn btn-outline-warning fw-bold mt-2"
+          style="width: 125px"
+        >
+          <a class="text-light text-decoration-none fs-4" href="./index.html"
+            >Typer</a
+          >
         </button>
         <button
           type="button"
-          class="btn btn-outline-info fw-bold mt-2" style="width: 125px;"
+          class="btn btn-outline-info fw-bold mt-2"
+          style="width: 125px"
         >
-          <a class="text-light text-decoration-none fs-4" href="./blog.html">Blog</a>
+          <a class="text-light text-decoration-none fs-4" href="./blog.html"
+            >Blog</a
+          >
         </button>
-        
       </div>
     </nav>
-    
+
     <div>
       <h1 class="title"><img src="./logo.png" /></h1>
-    <div id="show-time">0 seconds</div>
+      <div id="show-time">0 seconds</div>
 
-    <div class="box-container">
-      <div id="question"></div>
+      <div class="box-container">
+        <div id="question"></div>
 
-      <div id="display" class="inactive"></div>
+        <div id="display" class="inactive"></div>
 
-      <div class="buttons">
-        <button id="starts">START</button>
+        <div class="buttons">
+          <button id="starts">START</button>
+        </div>
+
+        <div class="divider-container">
+          <div class="line"></div>
+          <h1 class="title2">History</h1>
+          <div class="line"></div>
+        </div>
+        <div id="histories"></div>
       </div>
 
-      <div class="divider-container">
-        <div class="line"></div>
-        <h1 class="title2">History</h1>
-        <div class="line"></div>
-      </div>
-      <div id="histories"></div>
-    </div>
-
-    <div id="countdown"></div>
-    <div id="modal-background" class="hidden"></div>
-    <div id="result" class="hidden"></div>
+      <div id="countdown"></div>
+      <div id="modal-background" class="hidden"></div>
+      <div id="result" class="hidden"></div>
     </div>
 
     <script src="./history.js"></script>
