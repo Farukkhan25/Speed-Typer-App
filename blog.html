@@ -23,12 +23,451 @@
           type="button"
           class="btn btn-outline-info fw-bold mt-2" style="width: 125px;"
         >
-          <a class="text-light text-decoration-none fs-4" href="./Questions.html">Blog</a>
+          <a class="text-light text-decoration-none fs-4" href="./blog.html">Blog</a>
         </button>
       </div>
     </nav>
 
-    
+    <div class="blog-page-component">
+      <div class="container mt-1">
+        <div class="mt-1 pt-5">
+          <div class="blogs-content">
+            <div>
+              <div class="text-center text-bg-info fw-bolder p-2">
+                <h3>Recent Blogs</h3>
+              </div>
+              <div class="row mt-4">
+                <!-- First Blog Question -->
+                <div
+                  class="my-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                >
+                  <div
+                    class="card"
+                    id="blog-content"
+                    style="cursor: pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#blog-modal"
+                  >
+                    <div class="blog-thumbnail">
+                      <img src="./image/local-vs-session.jpg" alt="thumbnail" />
+                    </div>
+
+                    <div class="card-body">
+                      <div
+                        class="content-section d-flex flex-column justify-content-between h-100"
+                      >
+                        <div class="h-10 m-0" style="display: inline-block">
+                          <p class="card-title fw-bold text-primary fs-5">
+                            What is the difference between local storage and
+                            global storage?
+                          </p>
+                        </div>
+                        <div class="h-10 m-0" style="display: inline-block">
+                          <p class="card-text m-0">
+                            The main difference is that local storage data does
+                            not expire, whereas session storage data gets
+                            cleared when the user closes its browser window.
+                          </p>
+                        </div>
+                        <div class="pb-2 text-end">
+                          <button class="btn btn-primary">Learn More</button>
+                        </div>
+                        <div
+                          class="card-footer d-flex justify-content-between date-minute p-0 pt-4 m-0"
+                          style="display: inline-block"
+                        >
+                          <p class="author-name m-0">Md. Faruk Khan</p>
+                          <p class="release-date m-0">Sep 15, 2022</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="blog-modal" class="modal bg-body" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">
+                            Difference between local storage and global storage
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            <span class="fw-bold">Local Storage:</span> <br />
+                            Web storage can be viewed simplistically as an
+                            improvement on cookies, providing much greater
+                            storage capacity. Available size is 5MB which
+                            considerably more space to work with than a typical
+                            4KB cookie. The data is not sent back to the server
+                            for every HTTP request (HTML, images, JavaScript,
+                            CSS, etc) - reducing the amount of traffic between
+                            client and server. The data stored in localStorage
+                            persists until explicitly deleted. Changes made are
+                            saved and available for all current and future
+                            visits to the site​
+                          </p>
+                          <p>
+                            <span class="fw-bold">Session Storage:</span> <br />
+                            It is similar to localStorage. Changes are only
+                            available per window (or tab in browsers like Chrome
+                            and Firefox). Changes made are saved and available
+                            for the current page, as well as future visits to
+                            the site on the same window. Once the window is
+                            closed, the storage is deleted. The data is
+                            available only inside the window/tab in which it was
+                            set​
+                          </p>
+                          <p>
+                            <span class="fw-bold">Differences:</span> <br />
+                            The main difference is that local storage data does
+                            not expire, whereas session storage data gets
+                            cleared when the user closes its browser window.
+                            Page sessions are valid for only one tab at a time.
+                            So, if a user has three tabs open, each one will
+                            have its own page session. Since local storage is
+                            not session-based, all the data must be deleted via
+                            javascript or manually.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Second Blog Question -->
+                <div
+                  class="my-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                >
+                  <div
+                    class="card"
+                    id="blog-content"
+                    style="cursor: pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Second-Question-Modal"
+                  >
+                    <div class="blog-thumbnail">
+                      <img src="./image/scop.jpg" alt="thumbnail" />
+                    </div>
+
+                    <div class="card-body">
+                      <div
+                        class="content-section d-flex flex-column justify-content-between h-100"
+                      >
+                        <div class="h-10 m-0" style="display: inline-block">
+                          <p class="card-title fw-bold text-primary fs-5">
+                            What is the difference between global scope and
+                            block scope?
+                          </p>
+                        </div>
+                        <div class="h-10 m-0" style="display: inline-block">
+                          <p class="card-text m-0">
+                            The global scope is controlled by the window object,
+                            it's controlled by the global object. Block scopes
+                            are what you get when you use if statements, for
+                            statements, and the like.
+                          </p>
+                        </div>
+                        <div class="pb-2 text-end">
+                          <button class="btn btn-primary">Learn More</button>
+                        </div>
+                        <div
+                          class="card-footer d-flex justify-content-between date-minute p-0 pt-4 m-0"
+                          style="display: inline-block"
+                        >
+                          <p class="author-name m-0">Md. Faruk Khan</p>
+                          <p class="release-date m-0">Sep 15, 2022</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div
+                    id="Second-Question-Modal"
+                    class="modal bg-body"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">
+                            Difference between local storage and global storage
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            <span class="fw-bold">Global Scope:</span> <br />
+                            The variables defined outside of any function or
+                            curly brackets are known as global variables and
+                            have global scope. Global scope means that the
+                            variables can be accessed from any part of that
+                            program, any function or conditional state can
+                            access that variable. It is not a good practice to
+                            use global variables when they are not needed as
+                            every code block will have access to those
+                            variables.
+                          </p>
+                          <p>
+                            <span class="fw-bold">Block Scope:</span> <br />
+                            Block scope is also a sub-type of local scope. The
+                            block scope can be defined as the scope of the
+                            variables inside the curly brackets {}. Now, these
+                            curly brackets can be of loops, or conditional
+                            statements, or something else. You are only allowed
+                            to refer to these variables from within the curly
+                            brackets {}. Imagine a nested situation: A block of
+                            code enclosed with curly brackets{} containing some
+                            block variables.
+                          </p>
+                          <p>
+                            <span class="fw-bold">Differences:</span> <br />
+                            The global scope is controlled by the window object,
+                            it's controlled by the global object. Block scopes
+                            are what you get when you use if statements, for
+                            statements, and the like.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Third Blog Question -->
+                <div
+                  class="my-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                >
+                  <div
+                    class="card"
+                    id="blog-content"
+                    style="cursor: pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Third-Question-Modal"
+                  >
+                    <div class="blog-thumbnail">
+                      <img src="./image/event-loop.png" alt="thumbnail" />
+                    </div>
+
+                    <div class="card-body">
+                      <div
+                        class="content-section d-flex flex-column justify-content-between h-100"
+                      >
+                        <div class="h-10 m-0" style="display: inline-block">
+                          <p class="card-title fw-bold text-primary fs-5">
+                            How event loop works in Javascript?
+                          </p>
+                        </div>
+                        <div class="h-10 m-0" style="display: inline-block">
+                          <p class="card-text m-0">
+                            The Event Loop monitor the Call Stack and the
+                            Callback Queue. If the Call Stack is empty, the
+                            Event Loop will take the first event from the queue
+                            and will push it to the Call Stack.
+                          </p>
+                        </div>
+                        <div class="pb-2 text-end">
+                          <button class="btn btn-primary">Learn More</button>
+                        </div>
+                        <div
+                          class="card-footer d-flex justify-content-between date-minute p-0 pt-4 m-0"
+                          style="display: inline-block"
+                        >
+                          <p class="author-name m-0">Md. Faruk Khan</p>
+                          <p class="release-date m-0">Sep 15, 2022</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div
+                    id="Third-Question-Modal"
+                    class="modal bg-body"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">How event loop works</h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            <span class="fw-bold">Event Loop:</span> <br />
+                            The event loop is a process that waits for the Call
+                            Stack to be clear before pushing callbacks from the
+                            Task Queue to the Call Stack. Once the Stack is
+                            clear, the event loop triggers and checks the Task
+                            Queue for available callbacks. If there are any, it
+                            pushes it to the Call Stack, waits for the Call
+                            Stack to be clear again, and repeats the same
+                            process.
+                          </p>
+                          <p class="modal-image text-center">
+                            <img
+                              src="./image/eventLoop-flowchart.webp"
+                              alt="flowchart"
+                            />
+                          </p>
+
+                          <p>
+                            The above diagram demonstrates the basic workflow
+                            between the Event Loop and the Task Queue.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fourth Blog Question -->
+                <div
+                  class="my-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                >
+                  <div
+                    class="card"
+                    id="blog-content"
+                    style="cursor: pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Fourth-Question-Modal"
+                  >
+                    <div class="blog-thumbnail">
+                      <img src="./image/event-loop.png" alt="thumbnail" />
+                    </div>
+
+                    <div class="card-body">
+                      <div
+                        class="content-section d-flex flex-column justify-content-between h-100"
+                      >
+                        <div class="h-10 m-0" style="display: inline-block">
+                          <p class="card-title fw-bold text-primary fs-5">
+                            How many ways we get undefined in Javascript?
+                          </p>
+                        </div>
+                        <div class="h-10 m-0" style="display: inline-block">
+                          <p class="card-text m-0">
+                            The undefined property indicates that a variable has
+                            not been assigned a value, or not declared at all.
+                            In JavaScript there is Undefined ( type ), undefined
+                            ( value ) and undefined ( variable ).
+                          </p>
+                        </div>
+                        <div class="pb-2 text-end">
+                          <button class="btn btn-primary">Learn More</button>
+                        </div>
+                        <div
+                          class="card-footer d-flex justify-content-between date-minute p-0 pt-4 m-0"
+                          style="display: inline-block"
+                        >
+                          <p class="author-name m-0">Md. Faruk Khan</p>
+                          <p class="release-date m-0">Sep 15, 2022</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div
+                    id="Fourth-Question-Modal"
+                    class="modal bg-body"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">How event loop works</h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            <span class="fw-bold">Undefined Error:</span> <br />
+                            Undefined means that a variable has been declared
+                            but has not yet been assigned a value. If the
+                            variable that is being evaluated does not have an
+                            assigned value. A function returns undefined if a
+                            value was not returned.
+                          </p>
+                          <p>
+                            Code throws undefined error when this code is
+                            executed before the other file (where its declared
+                            and initialized) is executed.
+                          </p>
+
+                          <p>
+                            A property accessor evaluates to undefined if the
+                            property does not exist. The first temptation to
+                            check whether first or last properties are present
+                            is to verify them against undefined. This is
+                            performed in conditionals if(toAppend.first){} and
+                            if(toAppend.last){}...This approach has a drawback.
+                            undefined, as well as false, null, 0, NaN and '' are
+                            falsy values. In the current implementation of
+                            append(), the function doesn't allow to insert falsy
+                            elements.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
