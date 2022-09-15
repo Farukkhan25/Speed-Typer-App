@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Typing Master</title>
+    <title>Speed Typer</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,22 @@
     />
   </head>
   <body>
-    <h1 class="title"><img src="./logo.png" /></h1>
+    <nav class="navbar ">
+      <div class="container d-flex justify-content-between">
+        <button type="button" class="btn btn-outline-warning fw-bold mt-2" style="width: 125px;">
+          <a class="text-light text-decoration-none fs-4" href="./index.html">Typer</a>
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-info fw-bold mt-2" style="width: 125px;"
+        >
+          <a class="text-light text-decoration-none fs-4" href="./blog.html">Blog</a>
+        </button>
+        
+      </div>
+    </nav>
+    <div>
+      <h1 class="title"><img src="./logo.png" /></h1>
     <div id="show-time">0 seconds</div>
 
     <div class="box-container">
@@ -37,6 +52,7 @@
     <div id="countdown"></div>
     <div id="modal-background" class="hidden"></div>
     <div id="result" class="hidden"></div>
+    </div>
 
     <script src="./history.js"></script>
     <script src="./script.js"></script>

@@ -68,7 +68,8 @@ const gameOver = () => {
   // the current time is the finish time
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
-  const timeTaken = (finishTime - startTime) / 1000;
+  const timeTakenInitial = (finishTime - startTime) / 1000;
+  const timeTaken = Math.round(timeTakenInitial);
 
   // show result modal
   resultModal.innerHTML = "";
@@ -134,7 +135,7 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpentInitial = (currentTime - startTime) / 1000;
-  const timeSpent = parseInt(timeSpentInitial);
+  const timeSpent = Math.round(timeSpentInitial);
 
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
 }, 1000);

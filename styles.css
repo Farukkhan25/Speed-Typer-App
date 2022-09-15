@@ -16,6 +16,13 @@ body {
   margin: 0 auto;
 }
 
+.blog {
+  display: inline-block;
+  width: 150px;
+  float: right;
+  margin-right: 46px;
+}
+
 #question {
   height: 100px;
   display: flex;
@@ -63,7 +70,7 @@ body {
 }
 #result {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 250px;
@@ -75,7 +82,7 @@ body {
   text-align: center;
   padding: 2rem;
 }
-#show-time{
+#show-time {
   text-align: center;
   color: white;
   margin: 10px 0;
