@@ -16,13 +16,6 @@ body {
   margin: 0 auto;
 }
 
-/* .blog {
-  display: inline;
-  width: 150px;
-  float: right;
-  margin-right: 46px;
-} */
-
 #question {
   height: 100px;
   display: flex;
@@ -134,6 +127,12 @@ body {
   justify-content: center;
   margin: 30px 0;
 }
+
+#starts:hover {
+  color: #eb6565;
+  background: whitesmoke;
+}
+
 button {
   padding: 10px 20px;
   border: none;
