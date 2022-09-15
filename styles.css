@@ -16,12 +16,12 @@ body {
   margin: 0 auto;
 }
 
-.blog {
-  display: inline-block;
+/* .blog {
+  display: inline;
   width: 150px;
   float: right;
   margin-right: 46px;
-}
+} */
 
 #question {
   height: 100px;
