@@ -254,7 +254,7 @@ svg {
     padding: 0 20px;
     width: 100%;
   }
-  .card {
+  .cards {
     width: 100%;
     flex-direction: column;
   }
